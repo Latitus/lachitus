@@ -7,13 +7,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'jquery-rails'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'font-awesome-rails'
-gem 'bundler', '>= 1.8.4'
-
-source 'https://rails-assets.org' do
-  gem 'rails-assets-angular-ui-grid'
-  gem 'rails-assets-restangular'
-  # Additional rails-assets gems go here...
-end
+gem 'high_voltage', '~> 2.4.0'
 
 group :development, :test do
   gem 'byebug'

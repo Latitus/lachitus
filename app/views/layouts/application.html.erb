@@ -6,9 +6,67 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body ng-app="lachitusAppApp">
+<body>
+  <header class="header">
 
-<%= yield %>
+    <div class="-bg-dark wrap-content">
+      <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-lachitus-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <!-- <a class="navbar-brand" href="#/">Lochitus</a> -->
+      </div>
+
+      <h1>
+        <a href="#" class="logo"></a>
+      </h1>
+    </div>
+
+    <div class="navbar lachitus-navbar spacer-none" role="navigation">
+
+
+      <nav class="collapse -bg-gold navbar-collapse" id="js-lachitus-collapse">
+        <ul class="row nav -navbar-inline text-center text-uppercase">
+          <li class="col-sm-2"><a href="/">Collections</a></li>
+          <li class="col-sm-2"><a href="/">Bestselling</a></li>
+          <li class="col-sm-2"><a href="/">Shoes</a></li>
+          <li class="col-sm-2"><a href="/">Glasses</a></li>
+          <li class="col-sm-2"><a href="/">Bag</a></li>
+          <li class="col-sm-2"><a href="/">Clothes</a></li>
+        </ul>
+      </nav>
+
+
+    </div>
+  </header>
+
+  <main>
+    <%= yield %>
+  </main>
+
+  <footer class="footer -bg-dark text-center">
+    <div class="container">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="#" target="_blank" class="text-captilizer"> Term & condition</a>
+        </li>
+        <li>
+          <a href="#" target="_blank" class="text-captilizer"> Size guide</a>
+        </li>
+        <li>
+          <a href="#" target="_blank" class="text-captilizer"> About us</a>
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <p><span class="glyphicon glyphicon-heart"></span> 	&#169; Copyright 2015 - Lochitus INC</p>
+    </div>
+  </footer>
 
 </body>
 </html>
