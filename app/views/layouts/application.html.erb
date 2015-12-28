@@ -9,6 +9,23 @@
 <body>
   <header class="header">
 
+    <div class="navbar lachitus-navbar spacer-none -bg-gold" role="navigation">
+      <ul class="nav nav-pills pull-right">
+        <li>
+          <form class="form-inline">
+            <div class="form-group pull-left">
+              <div class="input-group">
+                <input type="text" class="form-control -border-color-gold" id="exampleInputAmount" placeholder="Search">
+              </div>
+            </div>
+            <button type="submit" class="btn btn__search"><i class="fa fa-search"></i></button>
+          </form>
+        </li>
+        <li><a href="/"><i class="fa fa-shopping-cart fa-2x"></i> Cart</a></li>
+        <li><a href="/users/sign_in"><i class="fa fa-user fa-2x"></i> Login</a></li>
+      </ul>
+    </div>
+
     <div class="-bg-dark wrap-content">
       <div class="navbar-header">
 
@@ -23,29 +40,34 @@
       </div>
 
       <h1>
-        <a href="#" class="logo"></a>
+        <a href="/" class="logo"></a>
       </h1>
     </div>
 
     <div class="navbar lachitus-navbar spacer-none" role="navigation">
 
-
       <nav class="collapse -bg-gold navbar-collapse" id="js-lachitus-collapse">
-        <ul class="row nav -navbar-inline text-center text-uppercase">
-          <li class="col-sm-2"><a href="/">Collections</a></li>
-          <li class="col-sm-2"><a href="/">Bestselling</a></li>
-          <li class="col-sm-2"><a href="/">Shoes</a></li>
-          <li class="col-sm-2"><a href="/">Glasses</a></li>
-          <li class="col-sm-2"><a href="/">Bag</a></li>
-          <li class="col-sm-2"><a href="/">Clothes</a></li>
+        <ul class="nav -nav-inline h-text-md-center nav__main text-uppercase">
+          <li><a href="/">Collections</a></li>
+          <li><a href="/">Bestselling</a></li>
+          <li><a href="/">Clothing</a></li>
+          <li><a href="/">Handbags</a></li>
+          <li><a href="/">Belts</a></li>
+          <li><a href="/">Shoes</a></li>
+          <li><a href="/">Accessories</a></li>
         </ul>
       </nav>
-
 
     </div>
   </header>
 
   <main>
+    <% if notice %>
+      <div class="alert alert-success"><%= notice %></div>
+    <% end %>
+    <% if alert %>
+      <div class="alert alert-danger"><%= alert %></div>
+    <% end %>
     <%= yield %>
   </main>
 
@@ -59,7 +81,7 @@
           <a href="#" target="_blank" class="text-captilizer"> Size guide</a>
         </li>
         <li>
-          <a href="#" target="_blank" class="text-captilizer"> About us</a>
+          <a href="/about" target="_blank" class="text-captilizer"> About us</a>
         </li>
       </ul>
     </div>

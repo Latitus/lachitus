@@ -1,5 +1,11 @@
-.footer {
-  a {
-    color: $goldColor;
+.footer__primary {
+  .nav-pills {
+    a {
+      color: $goldColor;
+      &:hover {
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    }
   }
 }

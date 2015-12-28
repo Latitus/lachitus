@@ -8,6 +8,8 @@ gem 'jquery-rails'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'font-awesome-rails'
 gem 'high_voltage', '~> 2.4.0'
+gem 'devise'
+
 
 group :development, :test do
   gem 'byebug'

@@ -8,9 +8,6 @@
 
 .lachitus-navbar {
   min-height: auto;
-  .navbar-collapse {
-    padding: 0;
-  }
   a {
     color: #000000;
     font-weight: 500;
@@ -19,6 +16,30 @@
     @include transition(background 0.5s, background-color 0.5s, color 0.5s);
     background-color: #000000;
     color: $goldColor;
+  }
+  .form-inline {
+    padding: 10px 15px;
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  .lachitus-navbar {
+    .collapse {
+      padding: 0;
+    }
+  }
+  .nav__main {
+    li {
+      float: left;
+      width: 100/7 * 1%;
+      a {
+        border-radius: 0;
+        padding: 10px 0;
+      }
+    }
+    li + li {
+      margin-left: 0;
+    }
   }
 }
 

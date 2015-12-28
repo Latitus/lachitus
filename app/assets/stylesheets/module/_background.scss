@@ -5,3 +5,11 @@
 .-bg-gold {
   @include gradient-horizontal($start-color: #C3813C, $end-color: #F5DE7C, $start-percent: 0.2%, $end-percent: 80%);
 }
+
+.-border-color-gold {
+  border: 1px solid $goldColor;
+}
+
+.-color-gold {
+  color: $goldColor;
+}
