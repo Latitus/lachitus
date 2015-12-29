@@ -18,8 +18,19 @@
     color: $goldColor;
   }
   .form-inline {
-    padding: 10px 15px;
+    padding: 11px 15px;
   }
+}
+
+.lachitus-navbar__head {
+  .nav {
+    > li > a {
+      border-radius: 0;
+      padding-top: 14px;
+      padding-bottom: 14px;
+    }
+  }
+
 }
 
 @media (min-width: $screen-md-min) {
