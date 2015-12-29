@@ -1,0 +1,8 @@
+.register-link {
+  a {
+    @extend .font-playball;
+    color: #ca7823;
+    font-size: 19px;
+    margin: 5px 10px;
+  }
+}

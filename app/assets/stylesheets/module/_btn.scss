@@ -5,3 +5,9 @@
     color: $goldColor;
   }
 }
+
+.btn--primary {
+  @extend .-bg-gold;
+  border-color: $blackColor;
+  color: $blackColor;
+}

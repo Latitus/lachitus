@@ -55,5 +55,5 @@
 .profile-title,
 .profile-position,
 .profile-text {
-  font-family: 'Playball', cursive;
+  @extend .font-playball;
 }
