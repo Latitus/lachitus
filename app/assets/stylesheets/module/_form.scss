@@ -1,17 +1,16 @@
 .form-box {
   color: $blackColor;
+  @extend .font-playball;
 }
 
 .form-box__title {
-  @extend .font-playball;
-  color: #CA7823;
   font-size: 85px;
   font-weight: 100;
   text-shadow: 1px 3px 0 $blackColor;
 }
 
 .form-box__label {
-  font-size: 16px;
+  font-size: 22px;
 }
 
 .form-box__input,
@@ -21,6 +20,12 @@
 
 .form-box__button {
   font-size: 16px;
+  font-weight: bold;
   float: right;
   padding: 7px 45px;
+}
+
+.form-box__input {
+  background: rgba(25, 24, 22, 0.8);
+  color: $whiteColor;
 }

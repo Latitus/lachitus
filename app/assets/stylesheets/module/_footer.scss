@@ -9,3 +9,13 @@
     }
   }
 }
+
+.footer__navbar-nav {
+  > li > a {
+    color: $goldColor;
+    &:hover {
+      background-color: transparent;
+      text-decoration: underline;
+    }
+  }
+}
