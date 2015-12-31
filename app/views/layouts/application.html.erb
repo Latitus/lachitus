@@ -23,7 +23,7 @@
         </li>
         <li><a href="/"><i class="fa fa-shopping-cart fa-2x"></i> Cart</a></li>
         <% if user_signed_in? %>
-          <li><a href="/profiles"><i class="fa fa-user fa-2x"></i> Edit profile</a></li>
+          <li><a href="/profiles/<%= current_user.profile.id %>/edit"><i class="fa fa-user fa-2x"></i> Edit profile</a></li>
            |
           <li><a href="/users/sign_out" data-method="delete"><i class="fa fa-sign-out fa-2x"></i> Sign-Out</a></li>
         <% else %>

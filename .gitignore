@@ -13,3 +13,9 @@
 /tmp
 
 /config/database.yml
+
+/public/assets/
+
+/public/system/
+
+/.byebug_history
