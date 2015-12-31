@@ -25,7 +25,9 @@
   padding: 7px 45px;
 }
 
-.form-box__input {
-  background: rgba(25, 24, 22, 0.8);
-  color: $whiteColor;
+.form-control {
+  &.form-box__input {
+    background: rgba(25, 24, 22, 0.8);
+    color: $whiteColor;
+  }
 }
