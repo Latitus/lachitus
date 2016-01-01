@@ -1,6 +1,5 @@
 .form-box {
   color: $blackColor;
-  @extend .font-playball;
 }
 
 .form-box__title {
@@ -10,6 +9,7 @@
 }
 
 .form-box__label {
+  @extend .font-playball;
   font-size: 22px;
 }
 
@@ -19,10 +19,9 @@
 }
 
 .form-box__button {
-  font-size: 16px;
+  @extend .font-playball;
+  font-size: 18px;
   font-weight: bold;
-  float: right;
-  padding: 7px 45px;
 }
 
 .form-control {
@@ -30,4 +29,8 @@
     background: rgba(25, 24, 22, 0.8);
     color: $whiteColor;
   }
+}
+
+.none-resize {
+  resize: none;
 }
