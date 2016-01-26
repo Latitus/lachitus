@@ -14,6 +14,10 @@ gem 'puma'
 gem 'uglifier', '>= 1.3.0'
 gem 'activeadmin', github: 'activeadmin'
 gem "paperclip", "~> 4.3"
+gem 'friendly_id', '~> 5.1.0'
+gem 'redis'
+gem 'hiredis'
+
 
 group :development, :test do
   gem 'byebug'
@@ -23,6 +27,7 @@ group :development do
   gem 'web-console', '~> 2.0'
 
   gem 'spring'
+  gem 'annotate'
 end
 
 group :production do

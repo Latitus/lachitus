@@ -1,6 +1,10 @@
 ActiveAdmin.register Product do
-  permit_params :title, :description, :price, :thumbnail_img, :cover_img
+  permit_params :title, :description, :price, :thumbnail_img, :cover_img, :ptype, :size, :color
   #   pictures_attributes: [[:photo]]
+
+  before_filter :only => [:show] do
+    @product = Product.friendly.find(params[:id])
+  end
 
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
@@ -38,6 +42,9 @@ ActiveAdmin.register Product do
       # f.has_many :pictures do |ff|
       #   ff.input :photo, as: :file, input_html: { multiple: true}
       # end
+      f.input :ptype, as: :select, collection: %w(belts handbags shoes accessories clothing bestselling collections), selected: 'belts'
+      f.input :size, as: :select, collection: %w(medium large xlarge small one-size handbags), selected: 'medium', multiple: true
+      f.input :color
 
       # Will preview the image when the object is edited
     end
@@ -55,6 +62,7 @@ ActiveAdmin.register Product do
       row :cover_img do
         image_tag(ad.cover_img.url(:medium))
       end
+      row :ptype
       # Will display the image on show object page
     end
   end
@@ -66,6 +74,7 @@ ActiveAdmin.register Product do
     column :price
     column :thumbnail_img
     column :cover_img
+    column :ptype
     actions
   end
 end

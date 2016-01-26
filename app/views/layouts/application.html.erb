@@ -21,9 +21,15 @@
             <button type="submit" class="btn btn__search"><i class="fa fa-search"></i></button>
           </form>
         </li>
-        <li><a href="/"><i class="fa fa-shopping-cart fa-2x"></i> Cart</a></li>
+        <!-- <li><a href="/"><i class="fa fa-shopping-cart fa-2x"></i> Cart (<span class="cart-count"></span>)</a></li> -->
+
         <% if user_signed_in? %>
-          <li><a href="/profiles/<%= current_user.profile.id %>/edit"><i class="fa fa-user fa-2x"></i> Edit profile</a></li>
+          <li>
+            <%= link_to cart_path do%>
+              <i class="fa fa-shopping-cart fa-2x"></i> Cart (<span class="cart-count"><%=current_user.cart_count%></span>)
+            <%end%>
+          </li>
+          <li><a href="/profiles/<%= current_user.profile.slug %>/edit"><i class="fa fa-user fa-2x"></i> Edit profile</a></li>
            |
           <li><a href="/users/sign_out" data-method="delete"><i class="fa fa-sign-out fa-2x"></i> Sign-Out</a></li>
         <% else %>
@@ -54,13 +60,13 @@
 
       <nav class="collapse -bg-gold navbar-collapse" id="js-lachitus-collapse">
         <ul class="nav h-text-md-center nav__main text-uppercase">
-          <li><a href="/">Collections</a></li>
-          <li><a href="/">Bestselling</a></li>
-          <li><a href="/">Clothing</a></li>
-          <li><a href="/">Handbags</a></li>
-          <li><a href="/">Belts</a></li>
-          <li><a href="/">Shoes</a></li>
-          <li><a href="/">Accessories</a></li>
+          <li><a class="nav" href="/products?type=collections">Collections</a></li>
+          <li><a class="nav" href="/products?type=bestselling">Bestselling</a></li>
+          <li><a class="nav" href="/products?type=clothing">Clothing</a></li>
+          <li><a class="nav" href="/products?type=handbags">Handbags</a></li>
+          <li><a class="nav" href="/products?type=belts">Belts</a></li>
+          <li><a class="nav" href="/products?type=shoes">Shoes</a></li>
+          <li><a class="nav" href="/products?type=accessories">Accessories</a></li>
         </ul>
       </nav>
 
