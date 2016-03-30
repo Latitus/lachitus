@@ -4,6 +4,8 @@
     <li data-target="#lachitus-slide" data-slide-to="0" class="active"></li>
     <li data-target="#lachitus-slide" data-slide-to="1"></li>
     <li data-target="#lachitus-slide" data-slide-to="2"></li>
+    <li data-target="#lachitus-slide" data-slide-to="3"></li>
+    <li data-target="#lachitus-slide" data-slide-to="4"></li>
   </ol>
 
   <!-- Wrapper for slides -->
@@ -17,81 +19,118 @@
     <div class="item">
       <%= image_tag("lachitus-slide3.jpg") %>
     </div>
+    <div class="item">
+      <%= image_tag("lachitus-slide4.jpg") %>
+    </div>
+    <div class="item">
+      <%= image_tag("lachitus-slide5.jpg") %>
+    </div>
   </div>
 </section> <!--/.slider -->
 
+<section>
+  <div class="header-bg wrap-content">
+    <div class="navbar-header">
+
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-lachitus-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+    </div>
+
+    <h1>
+      <a href="/" class="logo"></a>
+    </h1>
+  </div>
+
+  <div class="navbar lachitus-navbar spacer-none" role="navigation">
+
+    <nav class="collapse -bg-gold navbar-collapse" id="js-lachitus-collapse">
+      <ul class="nav h-text-md-center nav__main text-uppercase">
+        <li><a class="nav" href="/products?type=collections">New Collections</a></li>
+        <li><a class="nav" href="/products?type=clothing">Clothing</a></li>
+        <li><a class="nav" href="/products?type=handbags">Handbags</a></li>
+        <li><a class="nav" href="/products?type=shoes">Shoes</a></li>
+        <li><a class="nav" href="/products?type=jewelry">Jewelry</a></li>
+        <li><a class="nav" href="/products?type=accessories">Accessories</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</section>
 <section class="wrap-content section-about">
   <div class="container">
-    <div class="profile-container">
-      <div class="section-box">
-        <div class="profile">
-          <div class="row">
-            <div class="col-sm-5">
-              <div class="profile-photo text-center">
-                <%= image_tag("lachitus-founder.jpg", class: "avatar", alt: "Lachitus fashion") %>
-              </div>
-            </div>
-            <div class="col-sm-7">
-              <div class="profile-info">
-
-                <h1 class="profile-title">
-                  <span>I'm</span> Chi Tran
-                </h1>
-                <h2 class="profile-position">
-                  Designer and businessgirl
-                </h2>
-              </div> <!-- /.profile-info -->
-              <div class="profile-list">
-                <div class="row">
-                  <div class="col-xs-3 detail">Age</div>
-                  <div class="col-xs-9 info-detail">29</div>
-                </div>
-                <div class="row">
-                  <div class="col-xs-3 detail">Address</div>
-                  <div class="col-xs-9 info-detail">24058, Belgium, Brussels, Liutte 27, BE</div>
-                </div>
-                <div class="row">
-                  <div class="col-xs-3 detail">E-mail</div>
-                  <div class="col-xs-9 info-detail">lachitus@gmail.com</div>
-                </div>
-                <div class="row">
-                  <div class="col-xs-3 detail">Phone</div>
-                  <div class="col-xs-9 info-detail">+1 425 319 13 41</div>
-                </div>
-              </div> <!-- /.profile-list -->
-            </div>
-          </div>
-        </div>
-        <div class="profile-social -bg-gold text-center">
-
-          <ul class="nav navbar-nav social">
-            <li>
-              <a class="ripple-centered" href="https://www.facebook.com" target="_blank"><i class="fa fa-3x fa-facebook"></i></a>
-            </li>
-            <li>
-              <a class="ripple-centered" href="https://twitter.com/" target="_blank"><i class="fa fa-3x fa-twitter"></i></a>
-            </li>
-            <li>
-              <a class="ripple-centered" href="https://www.linkedin.com/" target="_blank"><i class="fa fa-3x fa-linkedin"></i></a>
-            </li>
-            <li>
-              <a class="ripple-centered" href="https://plus.google.com" target="_blank"><i class="fa fa-3x fa-google-plus"></i></a>
-            </li>
-            <li>
-              <a class="ripple-centered" href="https://www.instagram.com/" target="_blank"><i class="fa fa-3x fa-instagram"></i></a>
-            </li>
-          </ul>
-
-        </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <%= image_tag("lachitus-aboutus.jpg", class: "img-responsive", alt: "Lachitus fashion") %>
       </div>
-      <div class="profile-text text-center">
-        <p>
-          Hello! I'm Chi Tran. Founder of Lachitus.
-        </p>
+      <div class="col-sm-6">
+        <div class="text-center headspacer-small spacer-medium">
+          <p class="head-info spacer-xsmall">Modern fashion with high value and inexpensive collection</p>
+          <p class="head-info spacer-xsmall">Eye - Catching Individualized</p>
+          <p class="head-info">Where you <strong>express</strong> your aesthetic self</p>
+        </div>
+        <div class="text-center headspacer-small spacer-medium">
+          <p class="head-info">A real voice for the astist, the outcast, the dreamer, the person you want tobe</p>
+        </div>
       </div>
     </div>
   </div>
-</section> <!-- About Chi -->
+</section>
+<section class="wrap-content section-contact  text-center">
+  <div class="container">
+    <div class="row">
+      <h2 class="headspacer-small spacer-medium">Contact Us</h2>
+      <div class="col-sm-6">
+
+        <div class="spacer-xlarge">
+
+          <div class="spacer-medium">
+            <p class="detail spacer-xsmall">Address:</p>
+            <p class="head-info">745 East Valley Blvd PMB176 San Gabriel CA 91746</p>
+          </div>
+          <div class="spacer-medium">
+            <p class="detail spacer-xsmall">Email:</p>
+            <a  class="head-info spacer-medium" href="mailto:info@lachitus.com" target="_top">info@lachitus.com</a>
+          </div>
+          <div class="spacer-medium">
+            <p class="detail spacer-xsmall">Phone:</p>
+            <p class="head-info">+1 425 319 13 41</p>
+          </div>
+        </div>
+
+      </div> <!-- col-sm-6 -->
+
+      <div class="col-sm-6">
+        <%= image_tag("lachitus-contact.jpg", class: "img-responsive", alt: "Lachitus fashion") %>
+      </div> <!-- col-sm-6 -->
+    </div>
+    <div class="profile-social -bg-gold text-center headspacer-medium spacer-medium">
+
+      <ul class="nav navbar-nav social">
+        <li>
+          <a class="ripple-centered" href="https://www.facebook.com" target="_blank"><i class="fa fa-3x fa-facebook"></i></a>
+        </li>
+        <li>
+          <a class="ripple-centered" href="https://twitter.com/" target="_blank"><i class="fa fa-3x fa-twitter"></i></a>
+        </li>
+        <li>
+          <a class="ripple-centered" href="https://www.linkedin.com/" target="_blank"><i class="fa fa-3x fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a class="ripple-centered" href="https://plus.google.com" target="_blank"><i class="fa fa-3x fa-google-plus"></i></a>
+        </li>
+        <li>
+          <a class="ripple-centered" href="https://www.instagram.com/" target="_blank"><i class="fa fa-3x fa-instagram"></i></a>
+        </li>
+      </ul>
+
+    </div> <!-- /.profile-social -->
+  </div>
+</section>
 
 <section>
   <ul class="nav nav-collection">
