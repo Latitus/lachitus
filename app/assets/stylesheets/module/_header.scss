@@ -1,5 +1,5 @@
 .logo {
-  @include size(200px, 121px);
+  @include size(270px, 163px);
   background-image: asset-url("lachitus-logo.png");
   background-repeat: no-repeat;
   display: block;
@@ -64,5 +64,5 @@
 }
 
 .header-bg {
-  background-image: asset-url("lachitus-repeat.jpg");
+  background-image: asset-url("lachitus-repeat.png");
 }

@@ -10,6 +10,11 @@
   .portfolio-figure img {
     margin: 0 auto;
   }
+
+  .portfolio-caption {
+    @extend .josefin-slab;
+    height: 30%;
+  }
 }
 
 .portfolio-caption {
